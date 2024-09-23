@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Redplcs.PrudpProtocol", "src\Redplcs.PrudpProtocol.csproj", "{A7912266-CA95-4DDB-ACEB-872D04E8046C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Redplcs.PrudpProtocol.Tests", "tests\Redplcs.PrudpProtocol.Tests.csproj", "{0875388E-CC62-4512-9C94-EB7107432267}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{A7912266-CA95-4DDB-ACEB-872D04E8046C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7912266-CA95-4DDB-ACEB-872D04E8046C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7912266-CA95-4DDB-ACEB-872D04E8046C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0875388E-CC62-4512-9C94-EB7107432267}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0875388E-CC62-4512-9C94-EB7107432267}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0875388E-CC62-4512-9C94-EB7107432267}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0875388E-CC62-4512-9C94-EB7107432267}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
