@@ -9,4 +9,7 @@ internal struct PrudpPacketHeader
 	public byte SessionId;
 	public uint Signature;
 	public ushort SequenceId;
+	public uint ConnectionSignature;
+	public byte FragmentId;
+	public ushort PayloadSize;
 }
