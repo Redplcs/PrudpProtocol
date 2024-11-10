@@ -5,10 +5,10 @@ public class PrudpPortTests
 	[Theory]
 	[InlineData(1, PrudpStreamType.Secure, 0x31)]
 	[InlineData(15, PrudpStreamType.Secure, 0x3f)]
-	public void Encode_FromStreamIdAndType_ReturnsExpectedEncodedByte(
+	public void Encode_FromPort_ReturnsByte(
 		byte streamId,
 		PrudpStreamType streamType,
-		byte expectedEncodedByte)
+		byte expectedByte)
 	{
 		var port = new PrudpPort
 		{
@@ -16,15 +16,15 @@ public class PrudpPortTests
 			StreamType = streamType,
 		};
 
-		var encodedByte = port.Encode();
+		var encoded = port.Encode();
 
-		Assert.Equal(expectedEncodedByte, encodedByte);
+		Assert.Equal(expectedByte, encoded);
 	}
 
 	[Theory]
 	[InlineData(0x31, 1, PrudpStreamType.Secure)]
 	[InlineData(0x3f, 15, PrudpStreamType.Secure)]
-	public void Decode_FromEncoded_ReturnsExpectedStreamIdAndType(
+	public void Decode_FromByte_ReturnsPort(
 		byte encoded,
 		byte expectedStreamId,
 		PrudpStreamType expectedStreamType)
